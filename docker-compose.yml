@@ -16,4 +16,7 @@ services:
       - MYSQL_ROOT_PASSWORD=rootpass
       - TZ=Asia/Tokyo
     volumes:
-      - ./data:/var/lib/mysql
+      - data-volumes:/var/lib/mysql
+
+volumes:
+  data-volumes:
